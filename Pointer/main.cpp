@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int number=5;
-    int *numberPointer=&number; //One-line referencing
-    printf("numberPointer is pointing to address %p\n",numberPointer);
-    printf("number has value equal to %d",*numberPointer);
+    int a=5,b=10;
+    int *aPointer=&a,*bPointer=&b; //making references to int variables
+    printf("Use pointer to sum to value, a=%d, b=%d, a+b=%d",*aPointer,*bPointer,*aPointer+*bPointer);
     return 0;
 }
