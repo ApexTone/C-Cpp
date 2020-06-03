@@ -5,7 +5,7 @@ int main() {
     int *aPointer = a;//point to array, Note that you don't need '&' in front of the array
     for(int i=0;i<5;i++)
     {
-        printf("%d ",*(aPointer+i)); //looping through array using pointer
+        printf("%d ",aPointer[i]); //looping through array using pointer
     }
     return 0;
 }
